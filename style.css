@@ -93,3 +93,23 @@ a:hover{
     margin-bottom: 20px;     /* Spacing before the link */
     display: inline-block;    /* Ensures the background only wraps the text */
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-container { /* Replace with your actual card container class name */
+        display: flex;
+        flex-direction: column; /* Stacks cards vertically */
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card { /* Replace with your actual card class name */
+        width: 90%; /* Makes cards take up most of the screen width */
+        max-width: none;
+        margin: 0 auto;
+    }
+    
+    body {
+        padding: 40px 10px; /* Gives some breathing room at the top/bottom */
+    }
+}

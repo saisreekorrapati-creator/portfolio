@@ -1,0 +1,130 @@
+/* 1. Update the background to match your homepage vibe */
+body {
+    background-color: #fffafa; /* A very slight 'warm' white */
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #1a1a1a;
+}
+.nav-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px; /* Gives it that spacious, premium feel */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* These three rules ensure perfect centering */
+.nav-item {
+    flex: 1;
+}
+
+.nav-item.left {
+    text-align: left;
+}
+
+.nav-item.center {
+    text-align: center;
+}
+
+.nav-item.right {
+    text-align: right;
+}
+
+/* Styling for the Home link */
+.nav-item.left a {
+    color: #f082f4;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Styling for your centered header line */
+.header-quote {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    opacity: 0.5;
+    border-left: 1px solid #f082f4;
+    padding-left: 15px;
+}
+/* 3. Make the card look like a premium feature */
+.project-card {
+    background: #fff;
+    /* This shape gives it the unique brand identity */
+    border-radius: 20px 80px 20px 80px; 
+    max-width: 850px;      /* Reduces the width so it doesn't hit the screen edges */
+    margin: 0 auto 50px auto;
+    /* A very subtle pink-tinted border */
+    border: 1.5px solid rgba(240, 130, 244, 0.15); 
+    
+    /* Soft elevation shadow */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    
+    /* Increased padding for better internal spacing */
+    padding: 60px;
+    margin-bottom: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #f082f4;
+    box-shadow: 0 30px 60px rgba(240, 130, 244, 0.1);
+}
+
+/* Adjust the title to breathe better within the card */
+.card-text-block h2 {
+    font-size: 2.2rem;
+    margin: 10px 0 20px 0;
+    color: #1a1a1a;
+}
+
+/* 4. Bold Status Badge */
+.status-tag {
+    background-color: #f082f4;
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+/* 5. Colored Tech Tags */
+.tech-tag {
+    background: rgba(240, 130, 244, 0.1); /* Very light pink wash */
+    color: #d06cb5; /* Darker pink for readability */
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.card-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensures text and image start at the same height */
+    gap: 40px; /* Space between the text block and the image block */
+}
+
+/* 1. The left text block takes up most of the space */
+.card-text-block {
+    flex: 2;
+}
+
+/* 2. The right image block is smaller and defined */
+.card-image-block {
+    flex: 1;
+    max-width: 300px; /* Keeps the image from getting too large */
+}
+
+/* 3. The actual image is constrained to its container */
+.card-image-block img {
+    width: 100%;
+    border-radius: 8px; /* High-end rounded edges */
+    border: 1px solid #eee; /* Subtle frame */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* Faint shadow */
+}

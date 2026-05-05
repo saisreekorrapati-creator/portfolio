@@ -1,0 +1,95 @@
+body{
+    background-color:rgb(247, 195, 248);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+    font-family: 'Inter',sans-serif;
+
+}
+.main-container{
+    display:flex;
+    gap:20px;
+
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    padding:30px;
+    width:300px;
+    border-radius:30px 80px 30px 80px;
+    border:1px solid rgba(255,255,255,0.3);
+    text-align:center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+    gap:15px;
+    align-items: center;
+}
+.profile-pic{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-bottom:15px;
+}
+h2{
+    color:#222;
+    margin-top: 0;
+}
+p{
+    color:#555;
+    line-height: 1.6;
+}
+a{
+    color: rgb(240, 130, 244);
+    text-decoration:none;
+    font-weight: bold;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+.link-container{
+    display: flex;
+    flex-direction: column; /* Stacks them */
+   width:100%;    /* Centers them */
+    gap: 15px;
+}
+.link-container a {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 24px; /* Increased padding makes them feel like solid buttons */
+    border: 1.5px solid rgba(240, 130, 244, 0.5); 
+    border-radius: 30px; /* Perfect pill shape */
+    width: 75%;          /* Narrowing them slightly makes the card feel less crowded */
+    margin: 0 auto;
+    font-size: 15px;     /* Larger text feels more confident */
+    transition: all 0.3s ease;
+}
+
+.link-container a:hover {
+   background-color: rgb(240, 130, 244);
+    color: white;
+    transform: scale(1.05); /* Subtle pop effect */
+}
+.grinding{
+   font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+.status-code {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #ef75eb;           /* Matches your pink theme */
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85em;
+    margin-bottom: 20px;     /* Spacing before the link */
+    display: inline-block;    /* Ensures the background only wraps the text */
+}

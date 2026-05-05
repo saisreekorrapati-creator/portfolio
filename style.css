@@ -93,22 +93,19 @@ a:hover{
     margin-bottom: 20px;     /* Spacing before the link */
     display: inline-block;    /* Ensures the background only wraps the text */
 }
-/* Mobile Responsiveness - Force Stack */
-@media (max-width: 768px) {
-    /* Target the container holding the cards */
-    .container, .main-container, [class*="container"] { 
-        display: flex !important;
+/* Mobile Fix: This must be at the very bottom of style.css */
+@media screen and (max-width: 768px) {
+    body {
         flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 20px 0 !important;
+        height: auto !important;
+        padding: 40px 0 !important;
+        overflow-x: hidden !important;
     }
 
-    /* Target the cards themselves */
-    .card, [class*="card"] {
-        width: 90% !important; /* Forces them to stay inside the screen */
-        max-width: 350px !important; 
-        margin: 10px 0 !important; /* Vertical spacing between cards */
-        flex: none !important; /* Prevents them from trying to shrink or grow side-by-side */
+    .card {
+        width: 85% !important; /* Forces card to stay inside phone width */
+        max-width: 320px !important;
+        margin: 15px 0 !important; /* Adds space between stacked cards */
+        min-height: auto !important; /* Prevents cards from being too tall on mobile */
     }
 }
